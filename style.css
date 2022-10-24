@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "square_sans_serif";
+  src: url(./fonts/square_sans_serif_7.ttf);
+}
+:root {
+  --theme-color: #51fcf2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "square_sans_serif";
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  background: #000;
+}
+
+#clock {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.today {
+  width: 190px;
+  text-align: right;
+}
+.today #day {
+  font-size: 16px;
+  color: #9d9d9d;
+  border-bottom: 1px solid #fff;
+}
+.today .mmdd {
+  font-size: 24px;
+}
+
+.time {
+  width: 220px;
+  height: 220px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.time #ampm {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 30px;
+  padding-top: 6px;
+}
+.time .hhmm {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.7em;
+}
+.time .hhmm .colon {
+  font-size: 35px;
+}
+.time #ss {
+  text-align: right;
+  font-size: 24px;
+  margin-right: 30px;
+}
+
+/* ######## circle ######## */
+.time svg {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  transform: rotate(-90deg);
+}
+
+.time svg #bg_circle {
+  width: 200px;
+  height: 200px;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+  fill: none;
+  /* stroke-dasharray: 2; */
+}
+
+.time svg #time_circle {
+  width: 200px;
+  height: 200px;
+  stroke: var(--theme-color);
+  stroke-width: 10px;
+  filter: drop-shadow(0 0 5px var(--theme-color));
+  fill: none;
+  /* 반지름 100px 원둘레 628px */
+  stroke-dasharray: 628;
+  stroke-dashoffset: 0;
+  animation: stroke_circle 3s ease-in-out;
+}
+
+@keyframes stroke_circle {
+  0% {
+    stroke-dashoffset: 628;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: m;
+  }
+}
+
+/* 테마색 바꾸기 버튼 */
+.btn_box {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  display: flex;
+}
+.btn_box .theme_txt {
+  color: #ccc;
+  font-size: 10px;
+  padding: 5px;
+}
+.btn_box #theme_btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid var(--theme-color);
+  background: none;
+}
