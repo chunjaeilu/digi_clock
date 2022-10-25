@@ -74,7 +74,7 @@ setInterval(function () {
 
 // 테마색 바꾸기
 let i = 0;
-let theme_color = ["#51fcf2", "#d895c1", "#8581e0"];
+let theme_color = ["#51fcf2", "#BF70FF", "#FF803D", "#F1FF4A"];
 const themeEl = document.querySelector(":root");
 
 function change() {
