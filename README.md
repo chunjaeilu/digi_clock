@@ -1,4 +1,5 @@
-# 디지털 시계 | 22.10.21(금) ~ 25(화)
+# 디지털 시계
+22.10.21(금) ~ 25(화)
 
 URL : https://chunjaeilu.github.io/digi_clock/
 
