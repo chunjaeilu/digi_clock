@@ -2,7 +2,7 @@
 
 URL : https://chunjaeilu.github.io/digi_clock/
 
-- 개인과제 :: Javascript 활용 
+- 개인과제 :: Javascript 활용한 디지털시계 만들기
 
 - 과제내용
   - new Date 활용, 시간정보 불러오기
