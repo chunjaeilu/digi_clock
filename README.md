@@ -1,4 +1,4 @@
-# 디지털 시계 만들기
+# 디지털 시계 | 22.10.21 ~ 25
 
 URL : https://chunjaeilu.github.io/digi_clock/
 
